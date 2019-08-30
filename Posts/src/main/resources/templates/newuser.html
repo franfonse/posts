@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>New user</title>
+<link rel="stylesheet" type="text/css" href="./css/newuser.css">
+</head>
+<body>
+	<header>
+		<h1>Create a new user</h1>
+		<a th:href="@{/goHome}"><button>Back</button></a>
+	</header>
+
+	<form th:action="@{/createUser}" method="POST">
+		<label>Username:</label>
+		<input type="text" name="username">
+		
+		<label>Email:</label>
+		<input type="text" name="email">
+		
+		<label>Password:</label>
+		<input type="password" name="password">
+
+		<button type="submit">Register</button>
+	</form>
+
+	<footer>
+		<p>Made by <a href="http://www.instagram.com/franfonse">Francisco Fonseca</a>.</p>
+	</footer>
+
+</body>
+</html>

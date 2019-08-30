@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>New post</title>
+<link rel="stylesheet" type="text/css" href="./css/newpost.css">
+</head>
+<body>
+
+	<header>
+		<h1>New Post</h1>
+		<a th:href="@{/goPosts}"><button>Back</button></a>
+		<a th:href="@{/logOff}"><button>Log off</button></a>
+	</header>
+
+	<form th:action="@{/post}" method="POST">
+		<label>Comment:</label>
+		<textarea placeholder="Write your comment to post here..." name="comment"></textarea>
+
+		<button type="submit">Post</button>
+	</form>
+
+	<footer>
+		<p>Made by <a href="http://www.instagram.com/franfonse">Francisco Fonseca</a>.</p>
+	</footer>
+
+</body>
+</html>

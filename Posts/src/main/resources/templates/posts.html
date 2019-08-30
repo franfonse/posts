@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+<link rel="stylesheet" type="text/css" href="./css/posts.css">
+</head>
+
+<body>
+	<header>
+		<h1>Comments</h1>
+		<a th:href="@{/createPost}"><button>New Post</button></a>
+		<a th:href="@{/logOff}"><button>Log off</button></a>
+	</header>
+
+	<table>
+		<tr>
+			<th>User</th>
+			<th>Comment</th>
+			<th>Date</th>
+		</tr>
+		<tr th:each="pos: ${posts}">
+			<td th:text="${pos.getUser().getUsername()}"></td>
+			<td th:text="${pos.getComment()}"></td>
+			<td th:text="${pos.getDate()}"></td>
+		</tr>
+	</table>
+
+	<footer>
+		<p>Made by <a href="http://www.instagram.com/franfonse" target="_blank">Francisco Fonseca</a>.</p>
+	</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 18px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background-color: #DCDCDC;
+}
+
+header {
+	width: 100%;
+	height: auto;
+	background-color: darkslategrey;
+}
+
+header h1 {
+	padding: 30px 0 30px 0;
+	text-align: center;
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+form {
+	margin-top: 30px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 25%;
+	height: auto;
+	margin-bottom: 25px;
+}
+
+form label {
+	display: block;
+	text-align: center;
+}
+
+form label:nth-child(3) {
+	margin-top: 10px;
+}
+
+form input {
+	padding: 3px 2px;
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+}
+
+form button {
+	margin: auto;
+	margin-top: 20px;
+	display: block;
+	padding: 6px 20px;
+	cursor: pointer;
+	border: 1px solid #fff;
+	background-color: rgb(42, 155, 46);
+	color: #fff;
+}
+
+form button:hover {
+	background-color: rgb(81, 211, 86);
+	transition: 0.5s;
+}
+
+#fail {
+	margin-top: 5px;
+	text-align: center;
+	font-size: 0.8rem;
+	color: red;
+}
+
+a {
+	text-decoration: none;
+}
+
+a button {
+	display: block;
+	padding: 6px 20px;
+	margin: auto;
+	cursor: pointer;
+	border: 1px solid #fff;
+	color: #fff;
+	background-color: #008CBA;
+}
+
+a button:hover {
+	background-color: rgb(49, 175, 218);
+	transition: 0.5s;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+	background-color: #232323;
+}
+
+footer p {
+	padding: 50px 0 0 0;
+	text-align: center;
+	color: #fff;
+	font-size: 0.8rem;
+}
+
+footer p a {
+	color: darkcyan;
+}

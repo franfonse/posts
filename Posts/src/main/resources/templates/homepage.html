@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Homepage</title>
+<link rel="stylesheet" type="text/css" href="./css/homepage.css">
+</head>
+<body>
+	<header>
+		<h1>Welcome to my comments' site!</h1>
+	</header>
+
+	<form th:action="@{/login}" method="GET">
+		<label>Username:</label>
+		<input type="text" name="username">
+		
+		<label>Passsword:</label>
+		<input type="password" name="password">
+
+		<button>Log in</button>
+		
+		<p id="fail" th:text="${failLogIn}"></p>
+	</form>
+
+	<a th:href="@{/goRegister}"><button>Register</button></a>
+
+	<footer>
+		<p>Made by <a href="http://www.instagram.com/franfonse" target="_blank">Francisco Fonseca</a>.</p>
+	</footer>
+
+</body>
+</html>
